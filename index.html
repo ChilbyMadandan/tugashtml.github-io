@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>@chilby_madandan - 71190451 - Personal Web Page</title>
+</head>
+<body>
+    <h1>Welcome to my Page</h1>
+    <header>
+        <div class="content">
+            <img src="foto_saya.jpg" alt="Foto Diri Anda">
+            <div class="text">
+                <h3>About me</h3>
+                <p>Nama: Chilby Madandan</p>
+                <p>Kota: Ambon, Maluku</p>
+                <p>Provinsi: Maluku</p>
+                <p>Negara: Indonesia</p>
+                <p>Akun Instagram: <a href="https://www.instagram.com/chilby_madandan?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank"> @chilby_madandan</a></p>
+                <p>Skillset Pemrograman:</p>
+                <ol class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ol>
+                <button class="changeColorButton">Ganti Warna Background</button>
+            </div>
+        </div>
+    </header>
+
+    <footer>
+        <p>Dankeeeeeeeee!!!!!!!!!</p>
+    </footer>
+
+    <script>
+        document.querySelector('.changeColorButton').addEventListener('click', function() {
+            changeBackgroundColor();
+        });
+
+        function changeBackgroundColor() {
+            const colors = ['#ff0000', '#0000ff', '#00ff00', '#ffffff'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
